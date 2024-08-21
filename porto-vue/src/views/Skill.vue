@@ -1,6 +1,9 @@
 <template>
-  <section id="skill" class="min-h-screen flex items-center justify-center bg-gray-100">
-    <div>
+  <section
+    id="skill"
+    class="min-h-screen flex items-center justify-center bg-gray-100"
+  >
+    <div class="border-b-2">
       <Advantage />
       <EducationExperience />
       <Projects />

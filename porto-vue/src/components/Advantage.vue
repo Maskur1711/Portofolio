@@ -1,17 +1,18 @@
 <template>
-  <section class="my-16">
-    <h2 class="text-center text-2xl font-semibold mb-8">My Advantage</h2>
-    <div class="flex justify-center space-x-8">
+  <section class="flex flex-col items-center justify-center min-h-screen border-b-2">
+    <h2 class="text-center text-4xl font-semibold mb-8">Skill</h2>
+    <div class="flex justify-center space-x-56 mt-12">
       <div v-for="(advantage, index) in advantages" :key="index" class="text-center">
         <img
           :src="advantage.icon"
           alt="Icon"
-          class="mx-auto mb-4 w-52 h-56 object-contain"
+          class="mx-auto mb-4 w-40 h-36 object-contain filter grayscale hover:grayscale-0 hover:brightness-110 hover:scale-110 transition-all duration-300"
         />
         <p class="text-lg font-medium">{{ advantage.label }}</p>
         <p class="text-3xl font-semibold">{{ advantage.percentage }}</p>
       </div>
     </div>
+    <div class="border-t-2"></div>
   </section>
 </template>
 
