@@ -4,21 +4,21 @@
     <Navbar />
 
     <!-- Profile Section -->
-    <section class="relative text-center py-20 px-40 bg-[#393646] text-white">
+    <section class="relative text-center py-20 px-4 md:px-8 lg:px-20 bg-[#393646] text-white">
       <div class="container mx-auto flex flex-col lg:flex-row items-center">
         <div class="lg:w-1/2 text-left" data-aos="fade-right">
-          <h1 class="text-5xl font-bold leading-tight">
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
             <span class="text-white">DIMAS KURNIAWAN</span> <br />
             <span class="text-yellow-500">FRONTEND DEVELOPER</span>
           </h1>
-          <p class="mt-4 text-gray-400 max-w-xl">
+          <p class="mt-4 text-gray-400 text-sm md:text-base lg:text-lg max-w-xl">
             Seorang Sarjana Terapan Teknik Komputer dan Informatika di Politeknik Negeri
             Bandung. Saya memiliki pengalaman dalam bidang Frontend Developer yang
             berpengalaman selama 2 tahun. Memiliki kemampuan kerjasama Tim, manajemen
             waktu, kreatif, mampu beradaptasi dengan lingkungan baru, dan memiliki
             komunikasi yang baik.
           </p>
-          <div class="flex items-center mt-8 space-x-6">
+          <div class="flex flex-col md:flex-row items-center mt-8 space-y-4 md:space-y-0 md:space-x-6">
             <a
               href="./assets/resume_Dimas Kurniawan.pdf"
               download="Dimas_Kurniawan_Resume.pdf"
@@ -34,7 +34,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i class="fab fa-linkedin text-2xl text-gray-400 hover:text-white"></i>
+                <i class="fab fa-linkedin text-xl md:text-2xl text-gray-400 hover:text-white"></i>
               </a>
               <a
                 href="https://wa.me/6289513990786"
@@ -42,7 +42,7 @@
                 rel="noopener noreferrer"
               >
                 <i
-                  class="fa-brands fa-whatsapp text-2xl text-gray-400 hover:text-white"
+                  class="fa-brands fa-whatsapp text-xl md:text-2xl text-gray-400 hover:text-white"
                 ></i>
               </a>
               <a
@@ -50,7 +50,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i class="fab fa-instagram text-2xl text-gray-400 hover:text-white"></i>
+                <i class="fab fa-instagram text-xl md:text-2xl text-gray-400 hover:text-white"></i>
               </a>
             </div>
           </div>
@@ -62,7 +62,7 @@
           <img
             src="./assets/Foto.png"
             alt="Profile Image"
-            class="w-72 h-72 rounded-full object-cover shadow-lg bg-gray-800"
+            class="w-48 h-48 md:w-60 md:h-60 lg:w-72 lg:h-72 rounded-full object-cover shadow-lg bg-gray-800"
           />
         </div>
       </div>
@@ -74,7 +74,7 @@
     <!-- About Me Section -->
     <section id="project" class="bg-gray-800 text-white py-10" data-aos="fade-up">
       <div class="flex justify-center items-center">
-        <h1 class="text-center text-5xl font-bold leading-tight text-yellow-500">
+        <h1 class="text-center text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-yellow-500">
           Project Done
         </h1>
       </div>
