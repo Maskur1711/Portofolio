@@ -53,7 +53,3 @@ export default defineComponent({
   name: "Education",
 });
 </script>
-
-<style scoped>
-/* Add any custom styles here if needed */
-</style>

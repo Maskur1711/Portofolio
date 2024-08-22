@@ -1,6 +1,6 @@
-/* ./src/index.css */
+/* styles.css atau main.css */
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import '@fortawesome/fontawesome-free/css/all.min.css';

@@ -40,11 +40,11 @@ export default {
 
 .marquee {
   animation: marquee 20s linear infinite;
-  white-space: nowrap; /* Ensures all items are on one line */
+  white-space: nowrap; 
 }
 
 .bg-gray-600 {
   display: flex;
-  justify-content: start; /* Start the marquee from the right side */
+  justify-content: start; 
 }
 </style>

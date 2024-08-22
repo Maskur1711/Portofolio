@@ -52,14 +52,14 @@ export default defineComponent({
           description:
             "Isilah hari-hari libur kamu dengan sesuatu yang membuat kamu tersenyum, tertawa, dan bersyukur.",
           image: geotara,
-          link: "https://geotara.com", // Link yang dituju
+          link: "https://github.com/progantara/fe-geotara-portal", 
         },
         {
           name: "Oil Spill Detection",
           price: "Deteksi Tumpahan Minyak",
           description: "Deteksi Tumpahan Minyak di Laut dengan Teknologi AI.",
           image: LEN,
-          link: "https://len.com", // Link yang dituju
+          link: "https://github.com/Maskur1711/Oil-Spill-Detection-Using-YOLOv8", 
         },
         {
           name: "HRIS",
@@ -67,7 +67,7 @@ export default defineComponent({
           description:
             "Aplikasi Human Resource Information System (HRIS) yang memudahkan perusahaan dalam mengelola data karyawan.",
           image: TCI,
-          link: "https://tci.com", // Link yang dituju
+          link: "https://gitlab.com/hris-fe/hris",
         },
       ],
     };
