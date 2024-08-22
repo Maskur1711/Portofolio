@@ -9,7 +9,7 @@
           <img src="../assets/CSS.png" alt="CSS" class="h-[80px] py-2 px-8" />
           <img src="../assets/JS.png" alt="JavaScript" class="h-[80px] py-2 px-8" />
           <img src="../assets/PINIA.png" alt="Pinia" class="h-[80px] py-2 px-8" />
-          <img src="../assets/VUE.png" alt="Vue.js" class="h-[80px] py-2 px-8" />
+          <img src="../assets/Vue.png" alt="Vue.js" class="h-[80px] py-2 px-8" />
           <img src="../assets/React.png" alt="React" class="h-[80px] py-2 px-8" />
           <img
             src="../assets/Tailwind.png"
