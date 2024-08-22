@@ -11,7 +11,7 @@
           <img
             :src="certificate.image"
             alt="Certificate Image"
-            class="w-full h-48 object-cover rounded-md mb-4"
+            class="w-full h-auto object-cover rounded-md mb-4"
           />
           <h3 class="text-2xl font-semibold mb-2">{{ certificate.title }}</h3>
           <p class="text-gray-400">{{ certificate.institution }}</p>
@@ -85,10 +85,10 @@ export default defineComponent({
 </script>
 
 <style scoped>
-/* Menambahkan ukuran tetap untuk gambar */
 img {
   width: 100%;
-  height: 300px;
-  object-fit: cover; /* Bisa diganti dengan 'contain' jika diperlukan */
+  max-height: 300px;
+  height: auto;
+  object-fit: cover;
 }
 </style>
