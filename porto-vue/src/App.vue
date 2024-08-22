@@ -1,5 +1,5 @@
 <template>
-  <div id="home">
+  <div id="home" class="bg-[#393646]">
     <!-- Navbar Component -->
     <Navbar />
 
@@ -13,10 +13,10 @@
           </h1>
           <p class="mt-4 text-gray-400 max-w-xl">
             Seorang Sarjana Terapan Teknik Komputer dan Informatika di Politeknik Negeri
-            Bandung dengan IPK 2.90/4.0. Saya memiliki pengalaman dalam bidang Frontend
-            Developer yang berpengalaman selama 2 tahun. Memiliki kemampuan kerjasama Tim,
-            manajemen waktu, kreatif, mampu beradaptasi dengan lingkungan baru, dan
-            memiliki komunikasi yang baik.
+            Bandung. Saya memiliki pengalaman dalam bidang Frontend Developer yang
+            berpengalaman selama 2 tahun. Memiliki kemampuan kerjasama Tim, manajemen
+            waktu, kreatif, mampu beradaptasi dengan lingkungan baru, dan memiliki
+            komunikasi yang baik.
           </p>
           <div class="flex items-center mt-8 space-x-6">
             <a
@@ -84,6 +84,9 @@
     <section id="education" class="bg-[#393646] text-white py-10" data-aos="fade-up">
       <Education />
     </section>
+    <section id="certificate" class="bg-[#393646] text-white py-10" data-aos="fade-up">
+      <Certificate />
+    </section>
 
     <section id="contact" class="bg-gray-800 text-white py-10" data-aos="fade-up">
       <Contact />
@@ -98,6 +101,7 @@ import SkillsSection from "./views/SkillsSection.vue";
 import Works from "./views/Works.vue";
 import Contact from "./views/Contact.vue";
 import Education from "./views/Education.vue";
+import Certificate from "./views/Certificate.vue";
 
 export default {
   name: "App",
@@ -107,6 +111,7 @@ export default {
     SkillsSection,
     Works,
     Contact,
+    Certificate,
     Education,
   },
 };

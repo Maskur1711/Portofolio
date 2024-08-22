@@ -5,6 +5,7 @@
       <li><a href="#home" class="hover:text-yellow-500">Home</a></li>
       <li><a href="#project" class="hover:text-yellow-500">Project</a></li>
       <li><a href="#education" class="hover:text-yellow-500">Education</a></li>
+      <li><a href="#certificate" class="hover:text-yellow-500">Certificate</a></li>
       <li>
         <a
           href="#contact"
