@@ -4,12 +4,12 @@
     <Navbar />
 
     <!-- Profile Section -->
-    <section class="relative text-center py-20 px-4 md:px-8 lg:px-20 bg-[#393646] text-white">
+    <section class="relative text-center py-28 px-4 md:px-8 lg:px-20 bg-[#393646] text-white">
       <div class="container mx-auto flex flex-col lg:flex-row items-center">
         <div class="lg:w-1/2 text-left" data-aos="fade-right">
           <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
             <span class="text-white">DIMAS KURNIAWAN</span> <br />
-            <span class="text-yellow-500">FRONTEND DEVELOPER</span>
+            <span class="text-yellow-500 h-12 block" style="min-height: 48px;">{{ typedText }}</span>
           </h1>
           <p class="mt-4 text-gray-400 text-sm md:text-base lg:text-lg max-w-xl">
             Seorang Sarjana Terapan Teknik Komputer dan Informatika di Politeknik Negeri
@@ -72,7 +72,7 @@
     <SkillsSection />
 
     <!-- About Me Section -->
-    <section id="project" class="bg-gray-800 text-white py-10" data-aos="fade-up">
+    <section id="project" class="bg-gray-800 text-white py-[80px]" data-aos="fade-up">
       <div class="flex justify-center items-center">
         <h1 class="text-center text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-yellow-500">
           Project Done
@@ -94,7 +94,9 @@
   </div>
 </template>
 
+
 <script lang="ts">
+import { defineComponent, ref, onMounted } from "vue";
 import Navbar from "./components/Navbar.vue";
 import Button from "./components/Button.vue";
 import SkillsSection from "./views/SkillsSection.vue";
@@ -103,7 +105,7 @@ import Contact from "./views/Contact.vue";
 import Education from "./views/Education.vue";
 import Certificate from "./views/Certificate.vue";
 
-export default {
+export default defineComponent({
   name: "App",
   components: {
     Navbar,
@@ -114,11 +116,37 @@ export default {
     Certificate,
     Education,
   },
-};
-</script>
+  setup() {
+    const fullText = "FRONTEND DEVELOPER";
+    const typedText = ref("");
+    let index = 0;
+    let isDeleting = false;
 
-<style scoped>
-html {
-  scroll-behavior: smooth;
-}
-</style>
+    const type = () => {
+      if (isDeleting) {
+        if (index > 0) {
+          typedText.value = fullText.slice(0, index - 1);
+          index--;
+        } else {
+          isDeleting = false;
+        }
+      } else {
+        if (index < fullText.length) {
+          typedText.value = fullText.slice(0, index + 1);
+          index++;
+        } else {
+          isDeleting = true;
+        }
+      }
+    };
+
+    onMounted(() => {
+      setInterval(type, 150);
+    });
+
+    return {
+      typedText,
+    };
+  },
+});
+</script>
