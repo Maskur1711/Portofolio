@@ -1,27 +1,11 @@
 <template>
-  <section
-    id="skill"
-    class="min-h-screen flex items-center justify-center bg-gray-100"
-  >
-    <div class="border-b-2">
-      <Advantage />
-      <EducationExperience />
-      <Projects />
-    </div>
+  <section id="skill" class="h-screen flex items-center justify-center bg-yellow-100">
+    <h1 class="text-4xl font-bold">Skill</h1>
   </section>
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-import Advantage from "../components/Advantage.vue";
-import EducationExperience from "../components/EducationExperience.vue";
-import Projects from "../components/Projects.vue";
-
-export default defineComponent({
-  components: {
-    Advantage,
-    EducationExperience,
-    Projects,
-  },
-});
+export const Skill = {
+  name: "Skill",
+};
 </script>
