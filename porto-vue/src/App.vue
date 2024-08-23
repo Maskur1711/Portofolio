@@ -4,12 +4,16 @@
     <Navbar />
 
     <!-- Profile Section -->
-    <section class="relative text-center py-28 px-4 md:px-8 lg:px-20 bg-[#393646] text-white">
+    <section
+      class="relative text-center py-28 px-4 md:px-8 lg:px-20 bg-[#393646] text-white"
+    >
       <div class="container mx-auto flex flex-col lg:flex-row items-center">
         <div class="lg:w-1/2 text-left" data-aos="fade-right">
           <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
             <span class="text-white">DIMAS KURNIAWAN</span> <br />
-            <span class="text-yellow-500 h-12 block" style="min-height: 48px;">{{ typedText }}</span>
+            <span class="text-yellow-500 h-12 block" style="min-height: 48px">{{
+              typedText
+            }}</span>
           </h1>
           <p class="mt-4 text-gray-400 text-sm md:text-base lg:text-lg max-w-xl">
             Seorang Sarjana Terapan Teknik Komputer dan Informatika di Politeknik Negeri
@@ -18,15 +22,15 @@
             waktu, kreatif, mampu beradaptasi dengan lingkungan baru, dan memiliki
             komunikasi yang baik.
           </p>
-          <div class="flex flex-col md:flex-row items-center mt-8 space-y-4 md:space-y-0 md:space-x-6">
-            <a
-              href="./assets/resume_Dimas Kurniawan.pdf"
-              download="Dimas_Kurniawan_Resume.pdf"
-            >
+          <div
+            class="flex flex-col md:flex-row items-center mt-8 space-y-4 md:space-y-0 md:space-x-6"
+          >
+            <a :href="resumeUrl" download="resume_Dimas_Kurniawan.pdf">
               <Button variant="primary" class="rounded-xl text-base">
                 <p class="text-black">My Resume</p>
               </Button>
             </a>
+
             <div class="flex space-x-4">
               <!-- Social Media Icons -->
               <a
@@ -34,7 +38,9 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i class="fab fa-linkedin text-xl md:text-2xl text-gray-400 hover:text-white"></i>
+                <i
+                  class="fab fa-linkedin text-xl md:text-2xl text-gray-400 hover:text-white"
+                ></i>
               </a>
               <a
                 href="https://wa.me/6289513990786"
@@ -50,7 +56,9 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i class="fab fa-instagram text-xl md:text-2xl text-gray-400 hover:text-white"></i>
+                <i
+                  class="fab fa-instagram text-xl md:text-2xl text-gray-400 hover:text-white"
+                ></i>
               </a>
             </div>
           </div>
@@ -74,7 +82,9 @@
     <!-- About Me Section -->
     <section id="project" class="bg-gray-800 text-white py-[80px]" data-aos="fade-up">
       <div class="flex justify-center items-center">
-        <h1 class="text-center text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-yellow-500">
+        <h1
+          class="text-center text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-yellow-500"
+        >
           Project Done
         </h1>
       </div>
@@ -94,7 +104,6 @@
   </div>
 </template>
 
-
 <script lang="ts">
 import { defineComponent, ref, onMounted } from "vue";
 import Navbar from "./components/Navbar.vue";
@@ -104,6 +113,9 @@ import Works from "./views/Works.vue";
 import Contact from "./views/Contact.vue";
 import Education from "./views/Education.vue";
 import Certificate from "./views/Certificate.vue";
+
+// Import PDF file
+import resumePdf from "./assets/MyResume.pdf";
 
 export default defineComponent({
   name: "App",
@@ -117,6 +129,8 @@ export default defineComponent({
     Education,
   },
   setup() {
+    const resumeUrl = resumePdf;
+
     const fullText = "FRONTEND DEVELOPER";
     const typedText = ref("");
     let index = 0;
@@ -146,6 +160,7 @@ export default defineComponent({
 
     return {
       typedText,
+      resumeUrl,
     };
   },
 });
