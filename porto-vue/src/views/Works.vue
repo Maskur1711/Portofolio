@@ -25,9 +25,22 @@
             :href="product.link"
             target="_blank"
             rel="noopener noreferrer"
-            class="bg-gray-700 text-white py-2 px-4 rounded-xl font-semibold w-full block text-center hover:bg-gray-500 transition duration-200"
+            :class="[
+              'bg-gray-700',
+              'text-white',
+              'py-2',
+              'px-4',
+              'rounded-xl',
+              'font-semibold',
+              'w-full',
+              'block',
+              'text-center',
+              'hover:bg-gray-500',
+              'transition',
+              'duration-200',
+            ]"
           >
-            Click Here
+            {{ product.buttonText }}
           </a>
         </div>
       </div>
@@ -52,14 +65,16 @@ export default defineComponent({
           description:
             "Isilah hari-hari libur kamu dengan sesuatu yang membuat kamu tersenyum, tertawa, dan bersyukur.",
           image: geotara,
-          link: "https://github.com/progantara/fe-geotara-portal", 
+          link: "https://github.com/progantara/fe-geotara-portal",
+          buttonText: "Click Here", // Text tombol yang bisa diubah
         },
         {
           name: "Oil Spill Detection",
           price: "Deteksi Tumpahan Minyak",
           description: "Deteksi Tumpahan Minyak di Laut dengan Teknologi AI.",
           image: LEN,
-          link: "https://github.com/Maskur1711/Oil-Spill-Detection-Using-YOLOv8", 
+          link: "https://github.com/Maskur1711/Oil-Spill-Detection-Using-YOLOv8",
+          buttonText: "Click Here", // Text tombol yang bisa diubah
         },
         {
           name: "HRIS",
@@ -68,6 +83,15 @@ export default defineComponent({
             "Aplikasi Human Resource Information System (HRIS) yang memudahkan perusahaan dalam mengelola data karyawan.",
           image: TCI,
           link: "https://gitlab.com/hris-fe/hris",
+          buttonText: "Click Here", // Text tombol yang bisa diubah
+        },
+        {
+          name: "Manajemen Sekolah",
+          price: "",
+          description: "Aplikasi yang digunakan untuk manajemen sekolah.",
+          image: TCI,
+          link: "https://gitlab.com/hris-fe/hris",
+          buttonText: "On Going", // Text tombol yang bisa diubah
         },
       ],
     };
