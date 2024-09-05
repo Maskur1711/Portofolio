@@ -1,7 +1,7 @@
 <template>
   <section class="py-10 bg-[#393646] overflow-hidden">
     <div class="container mx-auto flex justify-center">
-      <div class="bg-gray-800 py-6 px-8 rounded-lg shadow-lg overflow-hidden">
+      <div class="bg-gray-800 py-6 px-8 rounded-lg shadow-lg overflow-hidden w-[80rem]">
         <!-- Marquee Wrapper -->
         <div class="flex space-x-8 marquee">
           <!-- Individual Logo -->
@@ -16,6 +16,10 @@
             alt="TailwindCSS"
             class="h-[80px] py-2 px-8"
           />
+          <img src="../assets/Github.png" alt="TailwindCSS" class="h-[80px] py-2 px-8" />
+          <img src="../assets/Gitlab.png" alt="TailwindCSS" class="h-[80px] py-2 px-8" />
+          <img src="../assets/Axios.png" alt="TailwindCSS" class="h-[80px] py-2 px-8" />
+          <img src="../assets/Node.png" alt="TailwindCSS" class="h-[60px] py-2 px-4" />
         </div>
       </div>
     </div>
@@ -40,11 +44,11 @@ export default {
 
 .marquee {
   animation: marquee 20s linear infinite;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
 .bg-gray-600 {
   display: flex;
-  justify-content: start; 
+  justify-content: start;
 }
 </style>
