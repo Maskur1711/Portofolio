@@ -5,7 +5,7 @@
       <!-- Contact Information -->
       <div class="flex-1">
         <div class="mb-6">
-          <h2 class="text-2xl font-semibold">Call Me</h2>
+          <h2 class="text-2xl font-semibold">Phone</h2>
           <p class="text-lg">+62 895-1399-0786</p>
         </div>
         <div class="mb-6">

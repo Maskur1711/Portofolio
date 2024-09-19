@@ -34,7 +34,7 @@
             <div class="flex space-x-4">
               <!-- Social Media Icons -->
               <a
-                href="https://www.linkedin.com/in/maskur17/"
+                href="https://www.linkedin.com/in/maskur1711/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

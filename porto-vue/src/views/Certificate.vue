@@ -41,14 +41,14 @@ export default defineComponent({
       certificates: [
         {
           id: 1,
-          title: "Frontend Developer",
+          title: "Belajar Membuat Front-end Web untuk Pemula",
           institution: "Dicoding Indonesia",
           date: "Januari 2025",
           image: DicodingFePemula,
         },
         {
           id: 2,
-          title: "Frontend Developer",
+          title: "Belajar Dasar Pemograman Web",
           institution: "Dicoding Indonesia",
           date: "Januari 2024",
           image: DicodingFeDasar,
