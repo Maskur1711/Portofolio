@@ -115,7 +115,7 @@ import Education from "./views/Education.vue";
 import Certificate from "./views/Certificate.vue";
 
 // Import PDF file
-import resumePdf from "./assets/MyResume.pdf";
+import resumePdf from "./assets/CV_DimasKurniawan.pdf";
 
 export default defineComponent({
   name: "App",
