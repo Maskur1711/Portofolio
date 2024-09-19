@@ -72,8 +72,8 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import geotara from "../assets/Hero-Section.png";
-import LEN from "../assets/LEN.png";
-import TCI from "../assets/TCI.png";
+import LEN from "../assets/OilSpill Detection.jpg";
+import TCI from "../assets/HR.png";
 import Sekolah from "../assets/PengelolaanSekolah.png";
 import Close from "../assets/close.svg"; // Import gambar close
 

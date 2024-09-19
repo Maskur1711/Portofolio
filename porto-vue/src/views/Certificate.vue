@@ -30,6 +30,9 @@ import Spring from "../assets/Spring.png";
 import WP from "../assets/WP.png";
 import Magang from "../assets/Magang.png";
 import Webinar from "../assets/Webinar.png";
+import DicodingDevOps from "../assets/DevOps.png";
+import DicodingJs from "../assets/JS.png";
+import DicodingJava from "../assets/java.png";
 
 export default defineComponent({
   name: "Certificates",
@@ -73,6 +76,27 @@ export default defineComponent({
         },
         {
           id: 6,
+          title: "Belajar Dasar-Dasar DevOps",
+          institution: "Dicoding",
+          date: "September 2024",
+          image: DicodingDevOps,
+        },
+        {
+          id: 7,
+          title: "Memulai Pemrograman Dengan Java",
+          institution: "Dicoding",
+          date: "September 2024",
+          image: DicodingJava,
+        },
+        {
+          id: 8,
+          title: "Belajar Dasar Pemrograman JavaScript",
+          institution: "Dicoding",
+          date: "September 2024",
+          image: DicodingJs,
+        },
+        {
+          id: 9,
           title: "Webinar Scrum Practitioner",
           institution: "Arutala",
           date: "September 2023",
